@@ -9,10 +9,10 @@
 <form action="#" method="">
   <div class="form-group">
     <label for="employeeId">SELECT AN EMPLOYEE TO UPDATE</label><br/>
-    <select id="employeeId" name="employeeId">
+    <select id="employeeId" name="employeeId" class="selectpicker" data-live-search="true" data-header="Select an Employee">
     <% if(typeof employees != "undefined" && employees.length > 0){ %>
       <% employees.forEach(function(employee){ %>
-        <option value="<%= employee.id %>" data-subtext="<%=employee.email%>">
+        <option value="<%= employee.id %>" data-subtext="<%=employee.email%>" data-icon="glyphicon-user">
           <%= employee.lastName + ", " +  employee.firstName %>
         </option>
       <% }) %>
@@ -58,6 +58,13 @@
     <label for="password" class="col-sm-2 control-label">Password</label>
     <div class="col-sm-10">
       <input type="text" class="form-control" id="password" name="password" aria-describedby="helpBlock" required="">
+      <span id="helpBlock" class="help-block">Password should be at least 8 characters, 1 upppercase, 1 lowercase, 1 special character, and one number</span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="passwordVerify" class="col-sm-2 control-label">Password Verify</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="passwordVerify" name="passwordVerify" aria-describedby="helpBlock" required="">
       <span id="helpBlock" class="help-block">Password should be at least 8 characters, 1 upppercase, 1 lowercase, 1 special character, and one number</span>
     </div>
   </div>

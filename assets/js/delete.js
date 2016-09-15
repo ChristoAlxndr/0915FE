@@ -4,10 +4,10 @@
  *
  * Here's what this you will need to do:
  * 
- * 1. Inlclude the following DataTables css in layout.ejs
+ * 1. Inlclude the following bootstrap-select css in layout.ejs
  *    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
  * 
- * 2. Include the following DataTables JavaScript in layout.ejs
+ * 2. Include the following bootstrap-select JavaScript in layout.ejs
  *    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
  *
  * 3. Using the bootstrap-selct plugin render dropdown on the page

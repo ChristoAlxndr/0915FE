@@ -14,7 +14,7 @@
  *
  * 3. Using the DataTables plugin render the table on the page as a DataTable
  *
- * 4. Use the buttons extention to enable the copy, csv, excel, pdf, and print
+ * 4. Use the buttons extention to enable the copy, csv, excel, pdf, and print exports
  *
  * 5. Use the colReorder Plugin to add the ability to reorder columns
  *
@@ -32,6 +32,13 @@
 
  $(function(){
 
- 	//code goes here
+    $('#employeeTable').DataTable({
+	  dom: 'Bfrtip',
+	        buttons: [
+	            'copy', 'csv', 'excel', 'pdf', 'print'
+	        ],
+	        colReorder: true,
+	        "scrollX": true
+	    });
 
  })
